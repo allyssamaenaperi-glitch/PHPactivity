@@ -1,0 +1,297 @@
+:root {
+    --coffee-dark: #3B2415;
+    --coffee-mid: #6F4E37;
+    --coffee-cream: #F5EBDD;
+    --coffee-accent: #C08552;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--coffee-cream);
+    color: var(--coffee-dark);
+    margin: 0;
+}
+
+#error-msg {
+    font-size: 0.8rem;
+    color: #e61b1b;
+    min-height: 18px;
+    margin: 4px 0;
+}
+
+label.error {
+    color: #e61b1b;
+    font-size: 0.75rem;
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin: 0 0 12px;
+}
+
+.navbar {
+    background-color: var(--coffee-dark);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--coffee-cream) !important;
+}
+
+.nav-link:hover {
+    color: var(--coffee-accent) !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(59, 36, 21, 0.6), rgba(59, 36, 21, 0.6)),
+        url("assets/coffe3.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 16px auto 28px;
+}
+
+.btn-coffee {
+    background-color: var(--coffee-accent);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-weight: 600;
+}
+
+.btn-coffee:hover {
+    background-color: var(--coffee-mid);
+    color: #fff;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: var(--coffee-dark);
+}
+
+.section-title p {
+    color: #6b6b6b;
+}
+
+.menu-card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.menu-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.price {
+    color: var(--coffee-accent);
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--coffee-dark);
+    color: var(--coffee-cream);
+    padding: 40px 0 20px;
+}
+
+footer a {
+    color: var(--coffee-cream);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--coffee-accent);
+}
+
+footer .social-icons a {
+    font-size: 1.3rem;
+    margin: 0 8px;
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero {
+        padding: 80px 16px;
+    }
+}
+
+body.login-page {
+    background-image: url("assets/coffe1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#card {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 32px 40px;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem;
+}
+
+#card .card-title img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#card .mb-3 {
+    width: 100%;
+}
+
+#card label {
+    font-size: 0.85rem;
+    color: #fd0b0ba4;
+    text-align: left;
+    display: block;
+}
+
+#card input.form-control {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+}
+
+#card p {
+    font-size: 0.75rem;
+    color: #f2f2f2;
+    margin: 6px 0;
+}
+
+#card p a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#card .btn.btn-primary.w-100 {
+    background-color: #695f057c;
+    color: #fffdfd;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.7rem;
+    margin: 10px 0 4px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    body.login-page {
+        padding: 12px;
+    }
+
+    #card {
+        padding: 24px 20px;
+        border-radius: 14px;
+        max-width: 100%;
+    }
+
+    #card .card-title img {
+        width: 52px;
+        height: 52px;
+    }
+
+    #card label {
+        font-size: 0.8rem;
+    }
+
+    #email,
+    #password {
+        font-size: 1rem;
+        padding: 0.55rem 0.9rem;
+    }
+
+    #card p {
+        font-size: 0.7rem;
+    }
+}
+
+body.register-page {
+    background-image: url("assets/coffe2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.register-page .card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-page .card-title {
+    color: #be904aa4;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.register-page .card p.text-muted {
+    color: #ffffff !important;
+}
+
+.register-page label.form-label {
+    color: #460a0a !important;
+}
+
+.register-page .form-check-label {
+    color: #f2f2f2 !important;
+}
+
+.register-page .form-check-label a {
+    color: #ffffff;
+}
+
+.register-page .btn-success {
+    border-radius: 50px;
+    background-color: #be904aa4;
+}
